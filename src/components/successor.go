@@ -13,8 +13,8 @@ func (s successor) access_inverted(n NaturalNumber) NaturalNumber {
 	return s.Inverted[n]
 }
 
-func Successor() SuccessorTable {
-	var returned SuccessorTable = SuccessorTable{
+func Successor() successor {
+	var returned successor = successor{
 		Map:      make(map[NaturalNumber]NaturalNumber),
 		Inverted: make(map[NaturalNumber]NaturalNumber),
 	}
