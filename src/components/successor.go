@@ -1,5 +1,4 @@
 package components
-
 type successor struct {
 	Map      map[NaturalNumber]NaturalNumber
 	Inverted map[NaturalNumber]NaturalNumber

@@ -6,8 +6,8 @@ import (
 )
 
 func main() {
-	var one components.NaturalNumber = components.Int(1)
-	var two components.NaturalNumber = one.Add(one)
+	var a components.NaturalNumber = components.Int(563124)
+	var b components.NaturalNumber = components.Int(123589)
 
-	fmt.Println(two.Add(one).Value)
+	fmt.Println(components.Monus(a, b))
 }
