@@ -1,15 +1,15 @@
 package components
 
-type SuccessorTable struct {
+type successor struct {
 	Map      map[NaturalNumber]NaturalNumber
 	Inverted map[NaturalNumber]NaturalNumber
 }
 
-func (s SuccessorTable) access_successor(n NaturalNumber) NaturalNumber {
+func (s successor) access_successor(n NaturalNumber) NaturalNumber {
 	return s.Map[n]
 }
 
-func (s SuccessorTable) access_inverted(n NaturalNumber) NaturalNumber {
+func (s successor) access_inverted(n NaturalNumber) NaturalNumber {
 	return s.Inverted[n]
 }
 
@@ -29,12 +29,12 @@ func Successor() SuccessorTable {
 	return returned
 }
 
-var successor_table SuccessorTable = Successor()
+var successor_table successor = Successor()
 
 func S(n NaturalNumber) NaturalNumber {
 	return successor_table.access_successor(n)
 }
 
-func SInverted(n NaturalNumber) NaturalNumber {
+func P(n NaturalNumber) NaturalNumber {
 	return successor_table.access_inverted(n)
 }
