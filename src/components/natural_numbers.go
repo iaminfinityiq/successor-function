@@ -13,7 +13,7 @@ func (n NaturalNumber) Add(other NaturalNumber) NaturalNumber {
 		return n
 	}
 
-	return S(n.Add(SInverted(other)))
+	return S(n.Add(P(other)))
 }
 
 func Int(value uint64) NaturalNumber {
