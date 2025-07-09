@@ -5,7 +5,7 @@ type NaturalNumber struct {
 }
 
 func (n NaturalNumber) IsZero() bool {
-	return n.Value == 0
+	return n == zero
 }
 
 func Int(value uint64) NaturalNumber {
